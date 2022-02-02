@@ -5,8 +5,10 @@ import Barra from './componentes/Barra';
 const App = () => {
     return (
       <div>
+        
         <Portada />
         <Barra />
+        
       </div>
     )  
 }
