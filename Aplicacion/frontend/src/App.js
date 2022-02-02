@@ -9,8 +9,10 @@ const App = () => {
 
     return (
       <div>
+        
         <Portada />
         <Barra />
+        
       </div>
     )
 
