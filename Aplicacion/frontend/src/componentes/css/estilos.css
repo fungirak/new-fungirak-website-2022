@@ -1,0 +1,182 @@
+
+body{
+    overflow-x: hidden;
+    user-select: none;
+}
+
+a,
+a:link,
+a:visited,
+a:hover,
+a:active{
+    text-decoration: none;
+}
+
+
+
+body::-webkit-scrollbar {
+    width: 12px;               /* width of the entire scrollbar */
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: rgb(8, 8, 8);        /* color of the tracking area */
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background-color: rgb(255, 255, 255);    /* color of the scroll thumb */
+    border-radius: 10px;       /* roundness of the scroll thumb */
+    border: 3px solid rgba(4, 123, 202, 0.938);  /* creates padding around scroll thumb */
+  }
+
+
+.foto-perfil{
+    height: 14em;
+    width: 14em;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: 10% 40%;
+    border: 1em solid white;
+    margin: .2em;
+    z-index: 80;
+    box-shadow: inset;
+}
+.portada{
+    height: 16em;
+    width: 100%;
+    object-fit: cover;
+    z-index: 70;
+}
+
+.ajuste-perfil{
+    margin-top: -7.3em;
+}
+
+.icon-pres{
+    width: 3.5em;
+    height: 3.5em;  
+}
+
+.icon-sm{
+    width: 1.5em;
+    height: 1.5em;
+}
+
+.espacio{
+    height: 100px;
+}
+
+.ajuste-img{
+    object-fit: cover;
+    object-position: 50px 50px;
+}
+
+.presentacion{
+    z-index: 110;
+    margin-left: -2em;
+}
+
+.sombra-letra{
+    text-shadow: 2px 2px 8px rgb(15, 103, 204);
+}
+
+.logo-sm{
+    width: 2.5em;
+    height: 2.5em;
+    border-radius: 10px;
+}
+
+.logo-xsm{
+    width: 1.5em;
+    height: 1.5em;
+    margin-right: .5em;
+    border-radius: 10px;
+    background: white;
+}
+
+.logo-card{
+    width: 4em;
+    height: 4em;
+    margin-left: .5em;
+}
+.logo-card-php{
+    width: 6em;
+    height: 4em;
+    margin-left: .5em;
+}
+
+.logo-card-mysql{
+    width: 4em;
+    height: 4em;
+    transform: scale(1.5,1.5);
+    margin-left: .5em;
+}
+
+
+.efecto{
+    transition: .3s;
+}
+
+.efecto:hover{
+    transition: .3s;
+    transform: scale(1.03,1.03)
+}
+
+
+.fungi{
+    width: 7em;
+    height: 7em;
+    border-radius: 50%;
+}
+
+.certificado{
+    height: 12em;
+    width:16em;
+    transition: 1s;
+}
+.certificado-chico{
+    transition: 1s;
+    height: 14em;
+    width: 16em;
+}
+
+.certificado-visible{
+    transition: 1s;
+    transform: scale(2.6, 2.6);
+    
+}
+
+.funguito{
+    width:3em;
+    height:3em;
+}
+
+.app{
+   width: 16em;
+   height: 16em;
+   object-fit: cover;
+   object-position: 10% 0%;
+}
+
+.centrado{
+    margin-left: 10em;
+}
+
+
+
+.emergente-hover-skills{
+    margin-left: 1.2em;
+    width: 10em;
+    position: fixed;
+}
+
+.fijar-todo{
+    width: 100vw;
+    max-width: 100%;
+}
+
+@media (max-width: 768px) {
+    .diplomas {
+       transform: rotate(90deg);
+       margin-top: 10vh;
+    }
+  }
