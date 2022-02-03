@@ -1,7 +1,7 @@
 import React from 'react';
 import { useState, useEffect, useRef } from 'react';
 import M from 'materialize-css';
-import './materialize-v1.0.0/materialize/css/materialize.min.css';
+import './materialize/css/materialize.min.css';
 import swal from 'sweetalert';
 
 

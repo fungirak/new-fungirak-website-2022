@@ -6,8 +6,8 @@ require('dotenv').config();
 const nodemailer = require('nodemailer');
 const emailsSchema = require('../models/email');
 
-const { check, validationResult } = require('express-validator');
-
+//const { check, validationResult } = require('express-validator');
+// PRÓXIMAS TAREAS , AUMENTAR LA VERIFICACIÓN DE LOS DATOS.
 
 
 // Recibir y guardar un email.
@@ -123,7 +123,7 @@ router.post('/contacto',  (req, res) => {
                 <p  class="centrar sello bold"> FUNGIRAK DevTeam.</p>
                 </body>
                 <br>
-                <a href="https://www.fungirak.com/politicas" class="centrar" style="text-decoration: none;"><p class="sm centrar bold">Política de Privacidad de los Datos</p></a>
+                <a href="https://www.fungirak.com/Politicas" class="centrar" style="text-decoration: none;"><p class="sm centrar bold">Política de Privacidad de los Datos</p></a>
                 `, // html body
                 attachments: [{
                     filename: 'fungirak-services.pdf',
@@ -143,7 +143,9 @@ router.post('/contacto',  (req, res) => {
 
 });
 
-// Obtener todos los registros. // ELIMINAR ESTA RUTA AL PUBLICAR // SOLO DESARROLLO
+// SOLO DESARROLLO
+/*
+// Obtener todos los registros. // 
 router.get('/emails', (req, res) => {
     emailsSchema
         .find()
@@ -179,6 +181,7 @@ router.delete('/emails/:id', (req, res) => {
         .catch((error) => res.json({ message: error}))
 });
 
+*/
 
 
 module.exports = router;
