@@ -3,6 +3,12 @@ import fungi1 from './img/fungi1.jpg';
 import fungi2 from './img/fungi2.jpg';
 import logoContacto from './img/logoContacto.png';
 import Banda from './helpers/Banda';
+import IconPerfil from './helpers/IconPerfil';
+import logoPoliticas from './img/logoPoliticas.png';
+
+const posicionar = () => {
+    window.scroll(0, 510);
+  }
 
 const DescripcionPersona = () => {
     return (
@@ -52,8 +58,14 @@ const DescripcionPersona = () => {
 
             <div className="espacio"></div>
 
-           
+            <div className="d-flex justify-content-center">
+                <p className="mt-4 text-sm text-muted">Ver política de privacidad del sitio</p>
+                <IconPerfil pos={posicionar} logo={logoPoliticas} ruta={'/politicas'} />
+            </div>
+
             <Banda seccion={'PERFIL'} color={'bg-primary text-white'} />
+            
+            <div className="espacio"></div>
 
         </div>
     )
