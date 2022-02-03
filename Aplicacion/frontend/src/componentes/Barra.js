@@ -44,7 +44,7 @@ const Barra = () => {
                         <Route exact path="/skills" element={<DescripcionSkills banda={'HABILIDADES'}/>} />
                         <Route exact path="/portafolio" element={<DescripcionPortafolio banda={'PORTAFOLIO'}/>} />
                         <Route exact path="/contacto" element={<Contacto banda={'CONTACTO'}/>} />
-                        <Route exact path="/politicas" element={<Politicas banda={'POLITICA DE PRIVACIDAD'}/>} />
+                        <Route exact path="/Politicas" element={<Politicas banda={'POLITICA DE PRIVACIDAD'}/>} />
                     </Routes>
                     
                 </div>
