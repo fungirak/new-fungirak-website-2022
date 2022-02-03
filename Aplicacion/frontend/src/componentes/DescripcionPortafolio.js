@@ -26,14 +26,14 @@ const DescripcionPortafolio = () => {
                             <img src={logoSms} alt="" className="app shadow-lg rounded efecto " />
 
                         <div className="text-center">
-                                <a href="https://www.fungirak.com" target="_blank" rel="noopener noreferrer">
+                                <a href="https://www.fungirak.com/sms-app-react/" target="_blank" rel="noopener noreferrer">
                                     <button className="btn btn-sm btn-primary p-2 m-3 ">
                                         <img src={logoFlecha} alt="..." className="logo-xsm" />
                                         <span className="fw-bold">ABRIR</span>
                                     </button>
                                 </a>
 
-                                <a href="https://www.fungirak.com" target="_blank" rel="noopener noreferrer">
+                                <a href="https://github.com/fungirak/sms-app-react" target="_blank" rel="noopener noreferrer">
                                 <button className="btn btn-sm btn-dark p-2 m-3">
                                     <img src={logoGithub} alt="..." className="logo-xsm" />
                                     <span className="fw-bold">CÓDIGO</span>
@@ -51,13 +51,13 @@ const DescripcionPortafolio = () => {
 
                         <div className="text-center">
                                 <a href="https://www.fungirak.com" target="_blank" rel="noopener noreferrer">
-                                    <button className="btn btn-sm btn-primary p-2 m-3 ">
+                                    <button className="btn btn-sm  green accent-4  p-2 m-3 ">
                                         <img src={logoFlecha} alt="..." className="logo-xsm" />
-                                        <span className="fw-bold">ABRIR</span>
+                                        <span className="fw-bold text-light">EN VIVO</span>
                                     </button>
                                 </a>
 
-                                <a href="https://www.fungirak.com" target="_blank" rel="noopener noreferrer">
+                                <a href="https://github.com/fungirak/new-fungirak-website-2022" target="_blank" rel="noopener noreferrer">
                                     <button className="btn btn-sm btn-dark p-2 m-3">
                                         <img src={logoGithub} alt="..." className="logo-xsm" />
                                         <span className="fw-bold">CÓDIGO</span>
