@@ -15,7 +15,7 @@ import Politicas from './Politicas';
 import Iconmenu from './helpers/Iconmenu';
 
 
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
   
 const posicionar = () => {
     window.scroll(0, 510);
@@ -35,6 +35,7 @@ const Barra = () => {
                     <Iconmenu pos={posicionar} logo={logoSkills} ruta={'/skills'} />
                     <Iconmenu pos={posicionar} logo={logoPortafolio} ruta={'/portafolio'} />
                     <Iconmenu pos={posicionar} logo={logoContacto} ruta={'/contacto'} />
+                    <Link to ruta={'/Politicas'} />
 
                     </ul>
 
