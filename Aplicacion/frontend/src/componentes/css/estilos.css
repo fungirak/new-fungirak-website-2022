@@ -65,6 +65,10 @@ body::-webkit-scrollbar {
     height: 100px;
 }
 
+.text-sm{
+    font-size: 12px;
+}
+
 .ajuste-img{
     object-fit: cover;
     object-position: 50px 50px;
