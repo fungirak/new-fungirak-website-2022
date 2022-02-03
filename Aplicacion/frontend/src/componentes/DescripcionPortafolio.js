@@ -50,12 +50,12 @@ const DescripcionPortafolio = () => {
                             <img src={logoFungirakWebsite} alt="" className="app shadow-lg rounded efecto  " />
 
                         <div className="text-center">
-                                <a href="https://www.fungirak.com" target="_blank" rel="noopener noreferrer">
+                                <span>
                                     <button className="btn btn-sm  green accent-4  p-2 m-3 ">
                                         <img src={logoFlecha} alt="..." className="logo-xsm" />
                                         <span className="fw-bold text-light">EN VIVO</span>
                                     </button>
-                                </a>
+                                </span>
 
                                 <a href="https://github.com/fungirak/new-fungirak-website-2022" target="_blank" rel="noopener noreferrer">
                                     <button className="btn btn-sm btn-dark p-2 m-3">
