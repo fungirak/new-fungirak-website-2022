@@ -5,7 +5,7 @@ import logoSkills from './img/logoSkills.png';
 import logoEstudios from './img/logoEstudios.png';
 import logoPortafolio from './img/logoPortafolio.png';
 import logoContacto from './img/logoContacto.png';
-
+//import logoPoliticas from './img/logoPoliticas.png';
 
 import DescripcionPersona from './DescripcionPersona';
 import DescripcionSkills from './DescripcionSkills';
@@ -37,7 +37,7 @@ const Barra = () => {
                     <Iconmenu pos={posicionar} logo={logoSkills} ruta={'/skills'} />
                     <Iconmenu pos={posicionar} logo={logoPortafolio} ruta={'/portafolio'} />
                     <Iconmenu pos={posicionar} logo={logoContacto} ruta={'/contacto'} />
-                   
+                    {/*<Iconmenu pos={posicionar} logo={logoPoliticas} ruta={'/politicas'} />*/}
 
                     </ul>
 
