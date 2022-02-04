@@ -83,7 +83,7 @@ router.post('/contacto',  (req, res) => {
                 html: `
                 <style type="text/css">
                     body {
-                        background-image: url("https://scontent.fsfn7-1.fna.fbcdn.net/v/t39.30808-6/272961902_266449862278475_241462261088485823_n.jpg?_nc_cat=107&ccb=1-5&_nc_sid=730e14&_nc_ohc=yOBy17ra1GAAX9tLzx4&_nc_ht=scontent.fsfn7-1.fna&oh=00_AT_-OHf7Cz7ACgjyLX9IgwV0RBmb62k1DTw3xVYJuZMnmQ&oe=61F9CD91"); 
+                        background-image: url("https://www.fungirak.com/new-fungirak-website-2022/static/media/logoFungirakWebsite.7886fffc75f1feb39938.png"); 
                         background-repeat: no-repeat;
                         background-position: -105px 0px;
                         padding: 1.5em; 
