@@ -123,7 +123,7 @@ router.post('/contacto',  (req, res) => {
                 <p  class="centrar sello bold"> FUNGIRAK DevTeam.</p>
                 </body>
                 <br>
-                <a href="https://www.fungirak.com/" class="centrar" style="text-decoration: none;"><p class="sm centrar bold">Política de Privacidad de los Datos</p></a>
+                <a href="https://www.fungirak.com" class="centrar" style="text-decoration: none;"><p class="sm centrar bold">Política de Privacidad en www.fungirak.com</p></a>
                 `, // html body
                 attachments: [{
                     filename: 'fungirak-services.pdf',
