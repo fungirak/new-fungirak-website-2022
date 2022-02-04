@@ -19,7 +19,7 @@ router.get('/comentarios', (req, res) => {
 });
 
 
-/* ALGUNAS FUNCIONALIDADES PARA AGREGAR PROXIMAMENTE 
+/* ALGUNAS FUNCIONALIDADES PARA AGREGAR PROXIMAMENTE AL USUARIO
 
 // get one comentario.
 router.get('/comentarios/:id', (req, res) => {
@@ -36,15 +36,6 @@ router.put('/comentarios/:id', (req, res) => {
     const { nombre, apellido, comentarioUsuario, created_at } = req.body;
     comentarioSchema
         .updateOne({ _id: id }, { $set: { nombre, apellido, comentarioUsuario, created_at } })
-        .then((data) => res.json(data))
-        .catch((error) => res.json({ message: error}))
-});
-
-// Borrar Todos
-router.delete('/comentarios', (req, res) => {
-    
-    comentarioSchema
-        .remove()
         .then((data) => res.json(data))
         .catch((error) => res.json({ message: error}))
 });
