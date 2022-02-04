@@ -125,7 +125,7 @@ const Contacto = () => {
 
         <div className="row">
           <div className="input-field col s6">
-            <input id="nombre" type="text"  maxLength="64"   pattern="[a-zA-ZñÑ ]{2,64}" className="validate" autoFocus required onChange={handleInputChange} name="nombre" value={datos.nombre} />
+            <input id="nombre" type="text"  maxLength="64"   pattern="[a-zA-ZñÑ ]{2,64}" className="validate ms-2" autoFocus required onChange={handleInputChange} name="nombre" value={datos.nombre} />
             <label htmlFor="nombre" className="fs-6">Nombre *</label>
           </div>
 
@@ -137,14 +137,14 @@ const Contacto = () => {
 
         <div className="row">
           <div className="input-field col s6">
-            <input id="asunto" type="text"  maxLength="64" className="validate" pattern="[a-zA-ZñÑ /.-_!¡¿?]{2,64}"  required onChange={handleInputChange} name="asunto" value={datos.asunto} />
+            <input id="asunto" type="text"  maxLength="64" className="validate ms-2" pattern="[a-zA-ZñÑ /.-_!¡¿?]{2,64}"  required onChange={handleInputChange} name="asunto" value={datos.asunto} />
             <label htmlFor="asunto" className="fs-6">Asunto *</label>
           </div>
         </div>
 
         <div className="row">
           <div className="input-field col s12">
-            <textarea id="mensaje" className="materialize-textarea"  pattern="[a-zA-Z0-9ñÑ ]{2,64}" maxLength="1000" required onChange={handleInputChange} name="mensaje" value={datos.mensaje} data-length="1000"></textarea>
+            <textarea id="mensaje" className="materialize-textarea ms-2"  pattern="[a-zA-Z0-9ñÑ ]{2,64}" maxLength="1000" required onChange={handleInputChange} name="mensaje" value={datos.mensaje} data-length="1000"></textarea>
             <label htmlFor="mensaje" className="fs-6">Mensaje *</label>
             <span className="helper-text" data-error="Inválido" data-success="Válido"> 1000 carácteres máximo</span>
           </div>
@@ -152,12 +152,12 @@ const Contacto = () => {
 
        
         <div className="row">
-          <div className="input-field col s12">
-            <input id="emisor" type="email" patter="^[^@]+@[^@]+\.[a-zA-Z]{2,}$" maxLength="64" className="validate" required onChange={handleInputChange} name="emisor" value={datos.emisor}  />
+          <div className="input-field col s6">
+            <input id="emisor" type="email" pattern="^[^@]+@[^@]+\.[a-zA-Z]{2,}$" maxLength="64" className="validate ms-2" required onChange={handleInputChange} name="emisor" value={datos.emisor}  />
             <label htmlFor="emisor" className="fs-6">Email *</label>
           </div>
 
-          <div className="input-field col s12">
+          <div className="input-field col s6">
             <input id="telefono" type="number"   className="validate"  onChange={handleInputChange} name="telefono" value={datos.telefono} />
             <label htmlFor="telefono" className="fs-6">Teléfono (opcional)</label>
           </div>
@@ -166,14 +166,14 @@ const Contacto = () => {
 
         <div className="row">
           <div className="input-field col s6">
-            <input id="company" type="text"  pattern="[a-zA-Z0-9ñÑ.-_!¡¿?/ ]{2,64}" maxLength="64" className="validate" onChange={handleInputChange} name="company" value={datos.company} />
+            <input id="company" type="text"  pattern="[a-zA-Z0-9ñÑ.-_!¡¿?/ ]{2,64}" maxLength="64" className="validate ms-2" onChange={handleInputChange} name="company" value={datos.company} />
             <label htmlFor="company" className="fs-6">Compañía (opcional)</label>
           </div>
         </div>
 
         <div className="row">
           <div className="input-field col s6">
-            <input id="website" type="text" maxLength="256" pattern="[a-zA-Z0-9ñÑ./_-$']{3,256}" className="validate" onChange={handleInputChange} name="website" value={datos.website} />
+            <input id="website" type="text" maxLength="256" pattern="[a-zA-Z0-9ñÑ./_-$']{3,256}" className="validate ms-2" onChange={handleInputChange} name="website" value={datos.website} />
             <label htmlFor="website" className="fs-6">Sitio Web (opcional)</label>
           </div>
         </div>
