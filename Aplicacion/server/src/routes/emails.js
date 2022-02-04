@@ -123,7 +123,7 @@ router.post('/contacto',  (req, res) => {
                 <p  class="centrar sello bold"> FUNGIRAK DevTeam.</p>
                 </body>
                 <br>
-                <a href="https://www.fungirak.com/new-fungirak-website-2022/politicas" class="centrar" style="text-decoration: none;"><p class="sm centrar bold">Política de Privacidad de los Datos</p></a>
+                <a href="https://www.fungirak.com/" class="centrar" style="text-decoration: none;"><p class="sm centrar bold">Política de Privacidad de los Datos</p></a>
                 `, // html body
                 attachments: [{
                     filename: 'fungirak-services.pdf',
@@ -162,15 +162,6 @@ router.get('/emails/:id', (req, res) => {
         .catch((error) => res.json({ message: error}))
 });
 
-// update a email.
-router.put('/emails/:id', (req, res) => {
-    const { id } = req.params;
-    const { asunto, nombre, apellido, company, website, emisor, telefono, mensaje } = req.body;
-    emailsSchema
-        .updateOne({ _id: id }, { $set: { asunto, nombre, apellido, company, website, emisor, telefono, mensaje } })
-        .then((data) => res.json(data))
-        .catch((error) => res.json({ message: error}))
-});
 
 // delete a email.
 router.delete('/emails/:id', (req, res) => {
