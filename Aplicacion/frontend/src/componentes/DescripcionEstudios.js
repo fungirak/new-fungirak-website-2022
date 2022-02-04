@@ -37,7 +37,7 @@ const DescripcionEstudios = () => {
                     <h4 className="text-center fw-bold">Cursos Extracurriculares Realizados:</h4>
 
                     <div className="mt-5 mb-5 p-5 shadow rounded  justify-content-center" >
-                        <div className="row col-sm-8 col-md-12 ">
+                        <div className="row col-sm-8 col-md-12 text-center">
                     
                             <Certificado certificado={certificadoArgPrograma1} modH={modalHandler} />
                             <Certificado certificado={certificadoMongoDB} modH={modalHandler} />

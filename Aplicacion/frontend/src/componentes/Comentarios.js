@@ -9,16 +9,18 @@ const Comentarios = () => {
 
     const vermas = useRef();
 
+    const [todoenpantalla, setTodoEnPantalla] = useState();
+    const [nuevoComentario, setNuevoComentario] = useState();
     const [completo, setCompleto] = useState(false);
     const [enviado, setEnviado] = useState(false);
     const [cargarComentarios, setCargarComentarios] = useState([]);
-    const [contador, setContador] = useState(5);
-    const [comentarios, setComentarios] = useState([]);
+    const [contador, setContador] = useState(3);
+    const [comentarios, setComentarios] = useState([]); 
     const [comentario, setComentario] = useState({
         nombre: '',
         apellido: '',
         comentarioUsuario: ''
-    })
+    }) // La entrada de los input.
 
     const handleInputChange = (event) => {
         setComentario({
@@ -27,17 +29,19 @@ const Comentarios = () => {
         });
     }
 
+    // Habilita el botón Enviar.
     useEffect(()=>{
         if(comentario.nombre && comentario.apellido && comentario.comentarioUsuario){
-          setCompleto(true); // Habilita el botón Enviar.
-        }
-        return ()=>{
-         
+          setCompleto(true);
         }
     },[comentario]);
 
+    
+
     const enviarDatos = (e) => {
+     setEnviado(true);
       e.preventDefault()
+     
       // Muestra una Alerta de confirmación para enviar el comentario.
       swal({
         title: "¿Enviar el Comentario?",
@@ -84,9 +88,12 @@ const Comentarios = () => {
       })
         .then((comentario) => comentario.json(comentario))
         .then((comentario) => console.log(comentario))
+        
 
         setEnviado(true);
-
+        setNuevoComentario(comentario);
+       
+       
         setComentario({
           nombre: '',
           apellido: '',
@@ -98,12 +105,25 @@ const Comentarios = () => {
         
           M.toast({html: 'COMENTARIO ENVIADO', classes: 'rounded bg-dark fs-5 fixed-top d-flex justify-content-center mx-auto' ,displayLength: 1500 }) ;
         
-
+          //setEnviado(false);
+         
+         
       }
     }
 
-    // Solicitar Todos los comentarios de la BD.
-    useEffect(() => {
+    fetch('http://localhost:4000/comentarios', {
+        headers: {
+          'Accept': 'application/json',
+          'Content-Type': 'application/json'
+        },
+        method: "GET"
+      })
+        .then((comentarios) => comentarios.json(comentarios))
+        .then((comentarios) => setComentarios(comentarios))
+                
+      
+
+    const obtenerComentarios = () => {
       fetch('http://localhost:4000/comentarios', {
         headers: {
           'Accept': 'application/json',
@@ -113,41 +133,76 @@ const Comentarios = () => {
       })
         .then((comentarios) => comentarios.json(comentarios))
         .then((comentarios) => setComentarios(comentarios))
-    },[]);
+        
+        console.log(comentarios)
+    }
+ 
+
+    useEffect(() => {
+      obtenerComentarios();
+      console.log(comentarios);
+     
+    }, [enviado])
 
      
-        // CARGA DE COMENTARIOS "VER MÁS"
+        // CARGA DE COMENTARIOS "VER MÁS".
         const detallesComentarios = (mas) => {
+         obtenerComentarios()
+         setCargarComentarios()
+
           let cantidad = comentarios.length;
             console.log(cantidad);
             console.log(contador);
-          if( cantidad-contador<5 ){ 
+            //Si quedan menos de 3 comentarios, muestra lo que quede..
+          if( cantidad-contador< 3 ){ 
+             obtenerComentarios();
+             setCargarComentarios(comentarios);
+             console.log(comentarios)
+             console.log(cargarComentarios)
+
              let comentariosMostrados  = new Array(cantidad);
             
              for(let i = 0 ; i < cantidad; i++){
                comentariosMostrados[i] = comentarios[i];
              }
-  
+
+            
              comentariosMostrados.map( comentario => (console.log({comentario})));
              setCargarComentarios(comentariosMostrados);
+             console.log(comentariosMostrados);
+             
+             setTodoEnPantalla(cantidad - comentariosMostrados.length)
+             console.log(todoenpantalla)
+             if(todoenpantalla === 0) {
+              //vermas.current.remove() ;
+             } else {
+               
+               return 0
+             }
+           
 
-            vermas.current.remove();
+          } else { // Carga de a 3 mientras haya disponible.
+            obtenerComentarios();
+            setCargarComentarios(comentarios);
+            console.log(comentarios)
+            console.log(cargarComentarios)
 
-          } else {
             setContador(contador+mas);
     
-             let comentariosMostrados  = new Array(cantidad - (cantidad-contador));
+            let comentariosMostrados  = new Array(cantidad - (cantidad-contador));
              console.log(comentariosMostrados);
              for(let i = 0 ; i < cantidad - (cantidad-contador) ; i++){
                comentariosMostrados[i] = comentarios[i];
              }
-  
+            
              comentariosMostrados.map( comentario => (console.log({comentario})));
              setCargarComentarios(comentariosMostrados);
+             console.log(comentariosMostrados);
           }
+       
         }
        
-       
+        
 
         useEffect(()=>{
           M.CharacterCounter.init(document.querySelector('#comentarioUsuario'));
@@ -167,7 +222,7 @@ const Comentarios = () => {
 
                   <div className="row m-0">
                     <div className="input-field  col s6">
-                        <input id="nombre" type="text"  className="validate"   required onChange={handleInputChange} name="nombre" value={comentario.nombre} />
+                        <input id="nombre" type="text"  className="validate ms-2"   required onChange={handleInputChange} name="nombre" value={comentario.nombre} />
                         <label htmlFor="nombre" className="fs-6">Nombre *</label>
                         <span className="helper-text" data-error="Inválido" data-success="Válido"></span>
                     </div>
@@ -181,9 +236,9 @@ const Comentarios = () => {
 
 
                   <div className="row m-0">
-                  <div className="input-field col s12">
+                  <div className="input-field col s10 ">
                       <i className="material-icons prefix">mode_edit</i>
-                      <textarea id="comentarioUsuario" className="materialize-textarea" maxLength="222"  required onChange={handleInputChange} name="comentarioUsuario" value={comentario.comentarioUsuario} data-length="222"></textarea>
+                      <textarea id="comentarioUsuario" className="materialize-textarea border "  maxLength="222"  required onChange={handleInputChange} name="comentarioUsuario" value={comentario.comentarioUsuario} data-length="222"></textarea>
                       <label htmlFor="comentarioUsuario" className="fs-6">Comentario *</label>
                       <span className="helper-text" data-error="Inválido" data-success="Válido">222 caractéres máximo</span>
                   </div>
@@ -238,7 +293,7 @@ const Comentarios = () => {
 
                 
                 <div className="row justify-content-center">
-                  <button className="btn waves-effect waves-dark fw-bold" id="vermas" ref={vermas} onClick={() => detallesComentarios(5)}>VER MÁS</button>
+                  <button className="btn waves-effect waves-dark fw-bold" id="vermas" ref={vermas} onClick={() => detallesComentarios(3)}>VER MÁS</button>
                 </div>
           </div>
         </div>
@@ -248,6 +303,8 @@ const Comentarios = () => {
   </div>
       </>
   </div>;
+                  
 };
+    
 
 export default Comentarios;
