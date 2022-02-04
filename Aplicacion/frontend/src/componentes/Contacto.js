@@ -49,42 +49,76 @@ const Contacto = () => {
 
     const enviarDatos = (e) => {
         e.preventDefault()
-      
-      
-      fetch('https://evening-ocean-33508.herokuapp.com/contacto', {
-        headers: {
-          'Accept': 'application/json',
-          'Content-Type': 'application/json'
-        },
-        method: "POST",
-        body: JSON.stringify(datos)
+
+              // Muestra una Alerta de confirmación para enviar el comentario.
+      swal({
+        title: "¿Enviar el Correo electrónico?",
+        text: "¡FUNGIRAK Agradece tu interés!",
+        icon: "success",
+        buttons: true,
       })
-        .then((data) => data.json(data))
-        .then((data) => console.log(data))
+      .then((value) => {
+        console.log(value);
+        if(value){
+          swal({
+            title: "CORREO",
+            text: "ENVIADO",
+            icon: "success",
+            buttons: false,
+            timer: 1500,
+          });
+          // SI
 
-        setEnviado(true);
+          fetch('https://evening-ocean-33508.herokuapp.com/contacto', {
+            headers: {
+              'Accept': 'application/json',
+              'Content-Type': 'application/json'
+            },
+            method: "POST",
+            body: JSON.stringify(datos)
+          })
+            .then((data) => data.json(data))
+            .then((data) => console.log(data))
+    
+            setEnviado(true);
+    
+            setDatos({
+              asunto: '',
+              nombre: '',
+              apellido: '',
+              company: '',
+              website: '',
+              emisor: '',
+              telefono: '',
+              mensaje: ''
+            });
+    
+            setBoolCompleto(!boolCompleto);
+    
+            swal({
+              title: "MENSAJE",
+              text: "ENVIADO",
+              icon: "success",
+              buttons: false,
+              timer: 1500,
+            });
 
-        setDatos({
-          asunto: '',
-          nombre: '',
-          apellido: '',
-          company: '',
-          website: '',
-          emisor: '',
-          telefono: '',
-          mensaje: ''
-        });
+        } else {
+          swal({
+            title: "Correo Electrónico",
+            text: "NO ENVIADO",
+            icon: "info",
+            buttons: false,
+            timer: 1000,
+          });
+        }
+        // NO
 
-        setBoolCompleto(!boolCompleto);
-
-        swal({
-          title: "MENSAJE",
-          text: "ENVIADO",
-          icon: "success",
-          buttons: false,
-          timer: 1500,
-        });
-
+      });
+     
+      
+      
+     
     }
 
     /*
