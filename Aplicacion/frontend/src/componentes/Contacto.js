@@ -49,22 +49,8 @@ const Contacto = () => {
 
     const enviarDatos = (e) => {
         e.preventDefault()
-        /*
-        console.log(
-          `
-          Asunto: ${datos.asunto} 
-          Nombre: ${datos.nombre} 
-          Apellido: ${datos.apellido} 
-          Company (opcional): ${datos.company}
-          Website (opcional): ${datos.website} 
-          Email: ${datos.email} 
-          Telefono (opcional): ${datos.telefono} 
-          Mensaje: ${datos.mensaje}
-          `
-      );
-      */
       
-      fetch('http://localhost:4000/contacto', {
+      fetch('https://link-de-heroku.com/', {
         headers: {
           'Accept': 'application/json',
           'Content-Type': 'application/json'
@@ -178,14 +164,7 @@ const Contacto = () => {
           </div>
         </div>
 
-        {/*
-        <p>
-          <label htmlFor="boolPoliticas">
-            <input type="checkbox" id="boolPoliticas" className="filled-in" defaultChecked={boolPoliticas} onChange={handlePoliticas} name="boolPoliticas" />
-            <span>Acepto la <a href="https://www.fungirak.com/politicas" style={{textDecoration: "none"}}>Política de Privacidad</a></span>
-          </label>
-        </p>
-        */}
+      
 
         <FormControlLabel 
           control={<Checkbox defaultChecked={boolPoliticas} color="success" onChange={handlePoliticas}/>} 
