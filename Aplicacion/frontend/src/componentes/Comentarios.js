@@ -78,7 +78,7 @@ const Comentarios = () => {
      
     const guardarComentario = () => {
 
-      fetch('https://link-de-heroku.com/', {
+      fetch('http://localhost:4000/comentarios', {
         headers: {
           'Accept': 'application/json',
           'Content-Type': 'application/json'
@@ -111,7 +111,7 @@ const Comentarios = () => {
       }
     }
 
-    fetch('https://link-de-heroku.com/', {
+    fetch('http://localhost:4000/comentarios', {
         headers: {
           'Accept': 'application/json',
           'Content-Type': 'application/json'
@@ -124,7 +124,7 @@ const Comentarios = () => {
       
 
     const obtenerComentarios = () => {
-      fetch('https://link-de-heroku.com/', {
+      fetch('http://localhost:4000/comentarios', {
         headers: {
           'Accept': 'application/json',
           'Content-Type': 'application/json'
