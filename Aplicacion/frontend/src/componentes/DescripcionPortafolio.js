@@ -6,6 +6,7 @@ import logoInvitados from './img/invitados.png'
 import logoGithub from './img/logoGithub.svg';
 import logoFlecha from './img/logoFlecha.png';
 import logoSms from './img/logoSms.jpg';
+import logoAerolineas from './img/logoAerolineas.jpg';
 import logoFungirakWebsite from './img/logoFungirakWebsite.png';
 
 import Comentarios from './Comentarios';
@@ -18,6 +19,30 @@ const DescripcionPortafolio = () => {
         <div className="container-fluid">
             <h1 className="text-center fw-normal mt-3 p-2 shadow-lg rounded-pill">Portafolio</h1>
             <div className="row   mt-5 d-flex justify-content-center col-12">
+
+            <div className="col-md-4  shadow rounded">
+                    <div className="col-sm-10 col-md-12 text-center card-body">
+                        <h4 className="text-center  bg-dark p-1 rounded-pill text-white shadow fw-normal mb-2">PASAJEROS AEROLINEAS </h4>
+                        <h5 className="text-center   text-dark  fw-normal mb-3">• FRONTEND • ANGULAR •</h5>
+                            <img src={logoAerolineas} alt="avion" className="app shadow-lg rounded efecto" />
+
+                        <div className="text-center">
+                                <a href="https://www.fungirak.com/pasajeros-aerolineas-angular/" target="_blank" rel="noopener noreferrer">
+                                    <button className="btn btn-sm btn-primary p-2 m-3 ">
+                                        <img src={logoFlecha} alt="..." className="logo-xsm" />
+                                        <span className="fw-bold">ABRIR</span>
+                                    </button>
+                                </a>
+
+                                <a href="https://github.com/fungirak/pasajeros-aerolineas-angular" target="_blank" rel="noopener noreferrer">
+                                <button className="btn btn-sm btn-dark p-2 m-3">
+                                    <img src={logoGithub} alt="..." className="logo-xsm" />
+                                    <span className="fw-bold">CÓDIGO</span>
+                                </button>
+                                </a>
+                        </div>
+                    </div>
+                </div>
 
             <div className="col-md-4  shadow rounded">
                     <div className="col-sm-10 col-md-12 text-center card-body">
@@ -96,7 +121,7 @@ const DescripcionPortafolio = () => {
                 <div className="col-md-4  shadow rounded">
                     <div className="col-sm-10 col-md-12 text-center card-body">
                         <h4 className="text-center  bg-dark p-1 rounded-pill text-white shadow fw-normal mb-2">AGENDA DE COMPRAS</h4>
-                        <h5 className="text-center   text-dark  fw-normal mb-3">• Frontend • REACT •</h5>
+                        <h5 className="text-center   text-dark  fw-normal mb-3">• FRONTEND • REACT •</h5>
                             <img src={logoAgenda} alt="" className="app shadow-lg rounded efecto " />
 
                         <div className="text-center">
@@ -120,7 +145,7 @@ const DescripcionPortafolio = () => {
                 <div className="col-md-4  shadow rounded ">
                     <div className="col-sm-10 col-md-12 text-center card-body ">
                         <h4 className="text-center bg-dark p-1 rounded-pill text-white shadow fw-normal mb-2">HACETE SOCIO</h4>
-                        <h5 className="text-center  text-dark fw-normal mb-3">• Frontend • REACT •</h5>
+                        <h5 className="text-center  text-dark fw-normal mb-3">• FRONTEND • REACT •</h5>
                       
                             <img src={logoSocio} alt="" className="app shadow-lg rounded efecto  " />
               
@@ -146,7 +171,7 @@ const DescripcionPortafolio = () => {
                 <div className="col-md-4  shadow rounded">
                     <div className="col-sm-10 col-md-12 text-center card-body">
                         <h4 className="text-center  bg-dark p-1  rounded-pill text-white shadow fw-normal mb-2">PANEL DEL ESTUDIANTE</h4>
-                        <h5 className="text-center  text-dark  fw-normal mb-3">• Frontend • HTML •</h5>
+                        <h5 className="text-center  text-dark  fw-normal mb-3">• FRONTEND • HTML •</h5>
                         
                             <img src={logoAtajos} alt="" className="app shadow-lg rounded  efecto" />
                         
