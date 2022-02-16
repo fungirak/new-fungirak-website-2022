@@ -20,10 +20,10 @@ const Portada = () => {
             </div>
 
             <div className="bg-verde d-flex superior justify-content-end p-2 animate__animated animate__fadeIn animate__delay-5s">
-                <h5 className="text-white fw-bold mt-2">¡Hacer una Colaboración!</h5>
-                <a href="https://mpago.la/242gBtS" target="_blank" rel="noopener noreferrer" className="d-flex justify-content-center text-white fw-bold  btn btn-sm ms-4 bg-verde border border-2 border-white rounded">
+                <h6 className="text-white fw-bold mt-2 font-sm">¡Hacer una Colaboración!</h6>
+                <a href="https://mpago.la/242gBtS" target="_blank" rel="noopener noreferrer" className=" d-flex justify-content-center text-white fw-bold  btn btn-sm ms-4 bg-verde border border-2 border-white rounded">
                     <img src={logoColaboracion} alt="colaborar" className="logoColab me-2" />
-                    <h6 className="mt-1">YO COLABORO</h6>
+                    <h6 className="mt-1 font-sm">YO COLABORO</h6>
                 </a>
                 <div className="me-3"></div>
             </div>

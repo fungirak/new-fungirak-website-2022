@@ -12,6 +12,10 @@ a:active{
     text-decoration: none;
 }
 
+.font-sm{
+    font-size: 14px;
+}
+
 .superior{
 position: absolute;
 }
