@@ -47,6 +47,8 @@ body::-webkit-scrollbar {
     z-index: 70;
 }
 
+
+
 .ajuste-perfil{
     margin-top: -7.3em;
 }
@@ -87,6 +89,11 @@ body::-webkit-scrollbar {
     width: 2.5em;
     height: 2.5em;
     border-radius: 10px;
+}
+
+.logoColab{
+    width: 2em;
+    height: 2em;
 }
 
 .logo-xsm{
@@ -171,6 +178,10 @@ body::-webkit-scrollbar {
     margin-left: 1.2em;
     width: 10em;
     position: fixed;
+}
+
+.bg-verde{
+    background: rgb(35, 189, 35);
 }
 
 .fijar-todo{
