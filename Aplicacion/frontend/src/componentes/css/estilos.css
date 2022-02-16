@@ -12,7 +12,13 @@ a:active{
     text-decoration: none;
 }
 
+.superior{
+position: absolute;
+}
 
+.bajar{
+    margin-top: 200px;
+}
 
 body::-webkit-scrollbar {
     width: 12px;               /* width of the entire scrollbar */
