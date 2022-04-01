@@ -22,6 +22,31 @@ const DescripcionPortafolio = () => {
 
             <div className="col-md-4  shadow rounded">
                     <div className="col-sm-10 col-md-12 text-center card-body">
+                        <h4 className="text-center  bg-dark p-1 rounded-pill text-white shadow fw-normal mb-2">PROYECTO FINAL ARGENTINA PROGRAMA "MI PORTAFOLIO"</h4>
+                        <h5 className="text-center   text-dark  fw-normal mb-3">• FULLSTACK • JAVA & ANGULAR •</h5>
+                            <img src={logoArgProg} alt="avion" className="app-arg-prog shadow-lg rounded efecto" />
+
+                        <div className="text-center">
+                                <a href="https://proyecto-arg-prog-frontend.web.app" target="_blank" rel="noopener noreferrer">
+                                    <button className="btn btn-sm btn-primary p-2 m-3 ">
+                                        <img src={logoFlecha} alt="..." className="logo-xsm" />
+                                        <span className="fw-bold">ABRIR</span>
+                                    </button>
+                                </a>
+
+                                <a href="https://github.com/fungirak" target="_blank" rel="noopener noreferrer">
+                                <button className="btn btn-sm btn-dark p-2 m-3">
+                                    <img src={logoGithub} alt="..." className="logo-xsm" />
+                                    <span className="fw-bold">CÓDIGO</span>
+                                </button>
+                                </a>
+                        </div>
+                    </div>
+                </div>
+                
+
+            <div className="col-md-4  shadow rounded">
+                    <div className="col-sm-10 col-md-12 text-center card-body">
                         <h4 className="text-center  bg-dark p-1 rounded-pill text-white shadow fw-normal mb-2">PASAJEROS AEROLINEAS </h4>
                         <h5 className="text-center   text-dark  fw-normal mb-3">• FRONTEND • ANGULAR •</h5>
                             <img src={logoAerolineas} alt="avion" className="app shadow-lg rounded efecto" />
