@@ -8,6 +8,7 @@ import logoFlecha from './img/logoFlecha.png';
 import logoSms from './img/logoSms.jpg';
 import logoAerolineas from './img/logoAerolineas.jpg';
 import logoFungirakWebsite from './img/logoFungirakWebsite.png';
+import logoArgProg from './img/logoArgProg.png';
 
 import Comentarios from './Comentarios';
 import Banda from './helpers/Banda';
@@ -43,7 +44,7 @@ const DescripcionPortafolio = () => {
                         </div>
                     </div>
                 </div>
-                
+
 
             <div className="col-md-4  shadow rounded">
                     <div className="col-sm-10 col-md-12 text-center card-body">
