@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/fungirak.github.io/new-fungirak-website-2022/static/css/main.5df6b59e.css",
-    "main.js": "/fungirak.github.io/new-fungirak-website-2022/static/js/main.90ece4c7.js",
+    "main.js": "/fungirak.github.io/new-fungirak-website-2022/static/js/main.95c2f521.js",
     "static/media/video-liviano.mp4": "/fungirak.github.io/new-fungirak-website-2022/static/media/video-liviano.6bb438976cd60e96ac3a.mp4",
     "static/media/fotoPerfil.jpg": "/fungirak.github.io/new-fungirak-website-2022/static/media/fotoPerfil.bf1f2190bad8f9a6bc1e.jpg",
     "static/media/logoPoster.png": "/fungirak.github.io/new-fungirak-website-2022/static/media/logoPoster.703b09925f04680064d9.png",
@@ -35,13 +35,14 @@
     "index.html": "/fungirak.github.io/new-fungirak-website-2022/index.html",
     "static/media/logoMongodb.svg": "/fungirak.github.io/new-fungirak-website-2022/static/media/logoMongodb.0368dd1052fe92069cab5fc9409752e0.svg",
     "static/media/logoGithub.svg": "/fungirak.github.io/new-fungirak-website-2022/static/media/logoGithub.255db585f8a0eb28a1e4deb91bde207d.svg",
+    "static/media/logoSpring.svg": "/fungirak.github.io/new-fungirak-website-2022/static/media/logoSpring.b701f1fccafd97e059e99fbcac91d203.svg",
     "static/media/logoExpress.svg": "/fungirak.github.io/new-fungirak-website-2022/static/media/logoExpress.632d3c32e6c8f71f7f7faf4fb71b945b.svg",
     "static/media/logoReact.svg": "/fungirak.github.io/new-fungirak-website-2022/static/media/logoReact.928f956d9c8ebcffb98a8e917154a81a.svg",
     "main.5df6b59e.css.map": "/fungirak.github.io/new-fungirak-website-2022/static/css/main.5df6b59e.css.map",
-    "main.90ece4c7.js.map": "/fungirak.github.io/new-fungirak-website-2022/static/js/main.90ece4c7.js.map"
+    "main.95c2f521.js.map": "/fungirak.github.io/new-fungirak-website-2022/static/js/main.95c2f521.js.map"
   },
   "entrypoints": [
     "static/css/main.5df6b59e.css",
-    "static/js/main.90ece4c7.js"
+    "static/js/main.95c2f521.js"
   ]
 }
