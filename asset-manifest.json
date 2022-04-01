@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/fungirak.github.io/new-fungirak-website-2022/static/css/main.5df6b59e.css",
-    "main.js": "/fungirak.github.io/new-fungirak-website-2022/static/js/main.d462667b.js",
+    "main.js": "/fungirak.github.io/new-fungirak-website-2022/static/js/main.90ece4c7.js",
     "static/media/video-liviano.mp4": "/fungirak.github.io/new-fungirak-website-2022/static/media/video-liviano.6bb438976cd60e96ac3a.mp4",
     "static/media/fotoPerfil.jpg": "/fungirak.github.io/new-fungirak-website-2022/static/media/fotoPerfil.bf1f2190bad8f9a6bc1e.jpg",
     "static/media/logoPoster.png": "/fungirak.github.io/new-fungirak-website-2022/static/media/logoPoster.703b09925f04680064d9.png",
@@ -21,6 +21,7 @@
     "static/media/logoPoliticas.png": "/fungirak.github.io/new-fungirak-website-2022/static/media/logoPoliticas.f74ccdb7a54257fcaee1.png",
     "static/media/certificadoFullStack.png": "/fungirak.github.io/new-fungirak-website-2022/static/media/certificadoFullStack.5168a3a45b576f46c892.png",
     "static/media/logoAngular.png": "/fungirak.github.io/new-fungirak-website-2022/static/media/logoAngular.43d8ce9c61eac4595ba8.png",
+    "static/media/logoJava.png": "/fungirak.github.io/new-fungirak-website-2022/static/media/logoJava.f5dd86c3ef6ef3f85acf.png",
     "static/media/certificadoReact.png": "/fungirak.github.io/new-fungirak-website-2022/static/media/certificadoReact.bb39bfdcb5a68e89e349.png",
     "static/media/certificadoPhp.png": "/fungirak.github.io/new-fungirak-website-2022/static/media/certificadoPhp.afe073c12a531a24b624.png",
     "static/media/logoArgProg.png": "/fungirak.github.io/new-fungirak-website-2022/static/media/logoArgProg.33cfbc1bb467676f2211.png",
@@ -37,10 +38,10 @@
     "static/media/logoExpress.svg": "/fungirak.github.io/new-fungirak-website-2022/static/media/logoExpress.632d3c32e6c8f71f7f7faf4fb71b945b.svg",
     "static/media/logoReact.svg": "/fungirak.github.io/new-fungirak-website-2022/static/media/logoReact.928f956d9c8ebcffb98a8e917154a81a.svg",
     "main.5df6b59e.css.map": "/fungirak.github.io/new-fungirak-website-2022/static/css/main.5df6b59e.css.map",
-    "main.d462667b.js.map": "/fungirak.github.io/new-fungirak-website-2022/static/js/main.d462667b.js.map"
+    "main.90ece4c7.js.map": "/fungirak.github.io/new-fungirak-website-2022/static/js/main.90ece4c7.js.map"
   },
   "entrypoints": [
     "static/css/main.5df6b59e.css",
-    "static/js/main.d462667b.js"
+    "static/js/main.90ece4c7.js"
   ]
 }
